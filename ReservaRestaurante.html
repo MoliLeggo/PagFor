@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Reserva de Mesa</title>
+  <meta charset="UTF-8">
+  <style>
+    /* Estilos CSS */
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de Reserva de Mesa</h1>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required>
+
+    <label for="telefono">Teléfono de Contacto:</label>
+    <input type="text" id="telefono" name="telefono" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="fecha">Fecha de la Reserva:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label>Horario de la Reserva:</label>
+    <input type="radio" id="hora1" name="hora" value="14:00" required>
+    <label for="hora1">14:00</label>
+    <input type="radio" id="hora2" name="hora" value="14:30" required>
+    <label for="hora2">14:30</label>
+    <input type="radio" id="hora3" name="hora" value="15:00" required>
+    <label for="hora3">15:00</label>
+    <input type="radio" id="hora4" name="hora" value="21:00" required>
+    <label for="hora4">21:00</label>
+    <input type="radio" id="hora5" name="hora" value="21:30" required>
+    <label for="hora5">21:30</label>
+    <input type="radio" id="hora6" name="hora" value="22:00" required>
+    <label for="hora6">22:00</label>
+
+    <label for="comensales">Número de Comensales:</label>
+    <select id="comensales" name="comensales" required>
+      <option value="">Selecciona el número de comensales</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios"></textarea>
+
+    <input type="reset" value="Limpiar">
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
